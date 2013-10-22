@@ -13,6 +13,20 @@
   <!-- Unless using the CDN hosted version, update the URL to the Flash SWF -->
   <script>
     videojs.options.flash.swf = "video-js.swf";
+
+    $( document ).ready(function(){
+      var myPlayer = _V_("vid1");
+      // $("#play").on("click", function(){
+      //   console.log("play")
+      //   myPlayer.play()
+      // })
+      // $("#pause").on("click", function(){
+      //   console.log("pause")
+      //   myPlayer.pause()
+      // })
+
+    })
+
   </script>
 
 
@@ -25,10 +39,12 @@
     <source src="http://video-js.zencoder.com/oceans-clip.mp4" type='video/mp4' />
     <source src="http://video-js.zencoder.com/oceans-clip.webm" type='video/webm' />
     <source src="http://video-js.zencoder.com/oceans-clip.ogv" type='video/ogg' />
-
   </video>
 
-  <video id="vid1" src="" class="video-js vjs-default-skin" controls preload="auto" width="640" height="360" data-setup='{ "techOrder": ["youtube"], "src": "http://www.youtube.com/watch?v=xjS6SftYQaQ" }'></video>
+  <video id="vid1" src="" class="video-js vjs-default-skin" controls preload="auto" width="640" height="360" data-setup='{ "techOrder": ["youtube"], "src": "https://www.youtube.com/watch?v=FANC-qvJFhQ" }'></video>
+  <button id="play">Play</button>
+  <button id="pause">Pause</button>
 
+<iframe width="560" height="315" src="//www.youtube.com/embed/FANC-qvJFhQ" frameborder="0" allowfullscreen></iframe>
 </body>
 </html>
