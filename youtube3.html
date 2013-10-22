@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>   
+<script type="text/javascript" src="http://www.youtube.com/player_api"></script>
+<script>
+var player;
+function onYouTubeIframeAPIReady() {player = new YT.Player('player');}
+if(window.opera){
+    addEventListener('load', onYouTubeIframeAPIReady, false);
+}
+</script>
+ </head>
+<body>
+<script>
+$(document).ready(function(){
+ });
+</script>
+<div id="video">
+  <iframe id="player" width="560" height="349" frameborder="0" src="http://www.youtube.com/embed/vE_0V55Vywc?rel=0&wmode=Opaque&enablejsapi=1"></iframe>
+</div>
+<a href="javascript: void(0)" onclick="player.playVideo(); return false">play</a><br>
+<a href="javascript: void(0)" onclick="player.stopVideo(); return false">stop</a>
+</body>
+</html>
